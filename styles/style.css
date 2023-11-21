@@ -3,7 +3,9 @@ body{
     padding: 0%;
 }
 .main-header{
-    background-color: #0f054c;
+    background-image: url(../images/hero-bg.png);
+    height: max-content;
+    width: auto;
     
 }
 .navContainer{
@@ -29,20 +31,25 @@ body{
     color: blue;
 }
 .BannerSection{
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 80vw;
+    /* width: 80vw; */
     margin: auto;
-    padding: 40px 10px;
+    padding: 37px 10px;
     color: white;
+    /* background-image: url(../images/hero-bg.png); */
 }
 .BannerImage{
     width: 60vw;
+    /* border: 1px solid red; */
     animation: moveImg 3s infinite;
 }
 .BannerTitle{
     padding-top: 50px;
+    width:30vw ;
+    /* border: 1px solid red; */
     font-family: sans-serif;
 }
 .BannerTitle h1{
@@ -231,10 +238,12 @@ body{
 }
 .footer-section{
     font-family: sans-serif;
-    gap: 40px;
+    /* gap: 40px;
     display: flex;
     /* margin: 50px 0px; */
-    justify-content: center;
+    /* justify-content: center; */
+     display: grid;
+     grid-template-columns: auto auto auto auto;
     background-color: #0f054c;
     color: white;
     width: auto;
@@ -340,8 +349,15 @@ body{
      .customers-box{
         width: 40vw;
      }
-    
-    
+  .footer-section{
+    grid-template-columns: auto auto;
+    height: max-content;
+
+  }
+    .footer-iteam{
+        width: max-content;
+        margin:auto;
+    }
 }
 
 

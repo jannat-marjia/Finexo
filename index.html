@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/eb7cd1d737.js"
       crossorigin="anonymous"
     ></script>
+ 
     <title>finexo</title>
   </head>
   <body>
@@ -18,15 +20,15 @@
         </div>
         <div class="navBer">
           <li>HOME</li>
-          <li>ABOUT</li>
-          <li>SERVICES</li>
-          <li>WHYUS</li>
-          <li>TEAM</li>
-          <li>LOGIN</li>
+          <li><a style="color:  white; text-decoration: none;"href="#about">ABOUT</a></li>
+          <li><a style=" color: white; text-decoration: none;"href="#services"> SERVICES</a></li>
+          <li><a style=" color: white; text-decoration: none;"href="#whyus"> WHYUS</a></li>
+          <li><a style=" color: white; text-decoration: none;"href="#TEAM"> TEAM</a></li>
+          <li><a style=" color: white; text-decoration: none;"href="#LOGIN">LOGIN</a></li>
         </div>
       </div>
       <div class="BannerSection">
-        <div class="BannerTitle">
+        <div data-aos="fade-right" data-aos-duration="3000" class="BannerTitle">
           <h1>
             CRYPTO<br />
             CURRENCY
@@ -52,8 +54,9 @@
         majority have suffered alteration
       </p>
     </div>
-    <div class="Service-section">
-      <div class="layout">
+    <div  class="Service-section">
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="center-center" data-aos-duration="2000" id="services"  class="layout">
         <img src="images/s1.png" alt="" />
         <h2>CURRENCY WALLET</h2>
         <p>
@@ -62,7 +65,8 @@
         </p>
         <h4>Read More</h4>
       </div>
-      <div class="layout">
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="center-center" data-aos-duration="3000" class="layout">
         <img src="images/s2.png" alt="" />
         <h2>SECURITY STORAGE</h2>
         <p>
@@ -71,7 +75,8 @@
         </p>
         <h4>Read More</h4>
       </div>
-      <div class="layout">
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="center-center" data-aos-duration="2000" class="layout">
         <img src="images/s3.png" alt="" />
         <h2>EXPERT SUPPORT</h2>
         <p>
@@ -82,7 +87,7 @@
       </div>
     </div>
     <div class="service-button"><button class="btn">View All</button></div>
-    <div class="section">
+    <div class="section" id="about">
       <div class="title">
         <h2>About <span style="color: rgb(19, 151, 151)">Us</span></h2>
         <p>
@@ -91,10 +96,10 @@
         </p>
       </div>
       <div class="About-section">
-        <div class="About-image">
+        <div data-aos="fade-right" data-aos-duration="2000" class="About-image">
           <img src="images/about-img.png" alt="" />
         </div>
-        <div class="About-layout">
+        <div data-aos="fade-left" data-aos-duration="2000" class="About-layout">
           <h2>We Are Finexo</h2>
           <p>
             There are many variations of passages of Lorem Ipsum available, but
@@ -116,7 +121,7 @@
       <h2>Why Choose<span style="color: rgb(23, 182, 182)"> Us</span></h2>
     </div>
     <div class="Feature-section">
-      <div class="container">
+      <div data-aos="zoom-in-down" data-aos-duration="2000" class="container">
         <img src="images/w1.png" alt="" />
         <h2>Expert Management</h2>
         <p>
@@ -128,7 +133,7 @@
           animi autem natus
         </p>
       </div>
-      <div class="container">
+      <div data-aos="zoom-in-down" data-aos-duration="2000" class="container">
         <img src="images/w2.png" alt="" />
         <h2>Secure Investment</h2>
         <p>
@@ -140,7 +145,7 @@
           animi autem natus
         </p>
       </div>
-      <div class="container">
+      <div data-aos="zoom-in-down" data-aos-duration="2000" id="whyus" class="container">
         <img src="images/w3.png" alt="" />
         <h2>Instant Trading</h2>
         <p>
@@ -152,7 +157,7 @@
           animi autem natus
         </p>
       </div>
-      <div class="container">
+      <div data-aos="zoom-in-down" data-aos-duration="2000" class="container">
         <img src="images/w4.png" alt="" />
         <h2>Happy Customers</h2>
         <p>
@@ -173,8 +178,8 @@
       <div class="team-section">
         <h1>Our <span style="color: aqua"> Team</span></h1>
       </div>
-      <div class="team-card">
-        <div class="team">
+      <div class="team-card" id="TEAM">
+        <div  data-aos="flip-left" data-aos-duration="3000" class="team">
           <img src="images/team-1.jpg" alt="" />
           <h2>Joseph Brown</h2>
           <p>Markting Head</p>
@@ -184,7 +189,7 @@
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
-        <div class="team">
+        <div  data-aos="flip-left" data-aos-duration="3000" class="team">
           <img src="images/team-2.jpg" alt="" />
           <h2>Nancy White</h2>
           <p>Markting Head</p>
@@ -194,7 +199,7 @@
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
-        <div class="team">
+        <div data-aos="flip-right" data-aos-duration="3000" class="team">
           <img src="images/team-3.jpg" alt="" />
           <h2>Earl Martinez</h2>
           <p>Markting Head</p>
@@ -204,7 +209,7 @@
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
-        <div class="team">
+        <div data-aos="flip-right" data-aos-duration="3000" class="team">
           <img src="images/team-4.jpg" alt="" />
           <h2>Josephine Allard</h2>
           <p>Markting Head</p>
@@ -281,7 +286,7 @@
           <p>Why Us</p>
           <p>Team</p>
         </div>
-        <div class="footer-btn">
+        <div id="LOGIN" class="footer-btn">
           <h1>Subscribe</h1>
           <br /><br />
           <input
@@ -294,5 +299,10 @@
         </div>
       </div>
     </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
