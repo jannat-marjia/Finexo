@@ -13,17 +13,50 @@
   />
    <!-- Tailwind CDN  -->
    <script src="https://cdn.tailwindcss.com"></script>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("sybCNSyEUfiDdchWG");
+   })();
+</script>
 </head>
 <body class="bg-transparent">
     <h3 class="text-6xl font-bold text-blue-600 text-center mt-8">Say Hello</h3>
-    <div class="border border-2-red w-96 rounded p-6 my-16 mx-auto  bg-transparent h-[85vh]">
+    <form id="myForm">
+      <div class="border border-2-red w-96 rounded p-6 my-16 mx-auto  bg-transparent h-[85vh]">
         Enter Your Name <br>
-        <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full my-4 max-w-xs" />Enter Your Email
-        <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full my-4 max-w-xs" />Enter Your <Address></Address>
-        <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full my-4 max-w-xs" />
+        <input type="text" name="name" placeholder="Type here" class="input input-bordered input-primary w-full my-4 max-w-xs" />Enter Your Email
+        <input type="email" name="email" placeholder="Type here" class="input input-bordered input-primary w-full my-4 max-w-xs" />Enter Your Address
+        <input type="text" name="address" placeholder="Type here" class="input input-bordered input-primary w-full my-4 max-w-xs" />
         Write Your Message Here
-        <textarea class="textarea textarea-primary" placeholder="Bio"></textarea> <br>
+        <textarea class="textarea textarea-primary" name="message" placeholder="Bio"></textarea> <br>
         <button class="btn btn-outline btn-primary w-24 my-4">Primary</button>
     </div>
+    </form>
+    <script>
+      document.getElementById("myForm").onsubmit = function(event) {
+        event.preventDefault();
+   
+        // Get form data
+        const formData = new FormData(event.target);
+   
+        // Send email using Email.js
+        emailjs.send("service_m75g95j", "template_rgzvl6d", {
+          from_name: formData.get("name"),
+          from_email: formData.get("email"),
+          message: formData.get("message"),
+        })
+        .then(function(response) {
+          alert("Email Sent Successfully")
+          console.log("Email sent successfully:", response);
+        }, function(error) {
+          console.log("Email failed to send:", error);
+        });
+      };
+    </script>
+  
+   
 </body>
 </html>
